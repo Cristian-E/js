@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@500&family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <!--Alerts de carrito-->
+    <div id="alert" class="none">
+        <p class="pAlert">
+            <img src="https://i.ibb.co/jvJ2xSZ/carrito.png" alt="carrito" class="imgAlert">
+            The product was added to the cart
+        </p>
+    </div>
+    <div class="none" id="noCart">
+        <p class="pAlert">
+            <img src="https://i.ibb.co/jvJ2xSZ/carrito.png" alt="carrito" class="imgAlert">
+            Your cart is empty
+        </p>
+    </div>
+
+    <!--Header carrito, titulo del sitio y API del clima-->
+    <div id="headerContainer">
+        <!--Header carrito-->
+        <div>
+            <div id="cartHeader">
+                <img src="https://i.ibb.co/jvJ2xSZ/carrito.png" alt="carrito" id="imgCart">
+                <h2 id="h2Cart">CART</h2>
+                <div id="counter" style="margin: 10px;"></div>
+            </div>
+            <div id="totalContainer">
+                <h3 id="total">TOTAL= u$s0</h3>
+            </div>
+            <div id="btnContainer">
+                <button id="showCart" class="btnCart">Show cart</button>
+                <button id="removeCart" class="btnCart">Empty cart</button>
+            </div>
+        </div>
+        <!--Titulo de la tienda-->
+        <div id="tittleContainer"> 
+            <img src="https://i.ibb.co/vQHZq32/snLogo.png" alt="store logo" id="imgTittle">
+            <h1>
+                DRUMTRACK STORE
+            </h1>
+        </div>
+        <!--API Clima-->
+        <div id="wheaterContainer"> 
+            <div id="weather">
+                <img src="" alt="" id="icono">
+            </div>
+        </div>
+    </div>
+
+    <!--HTML vacio para la creacion dinamica del carrito a traves de JS-->
+    <div id="cartDOM">
+        <ul id="cart">    
+        </ul>
+    </div>
+
+    <!--Contenedor de tarjetas-->
+    <div class="divCards"> 
+        <!--Track 1-->
+        <div class="cardContainer">
+            <h2>Track 1</h2>
+            <!--Tarjeta 1-->
+            <div class= "products rock"">
+                <img src="https://i.ibb.co/2M7K8BB/waveform.png" alt="stereo track">
+                <h3>Name</h3>
+                <p>Price</p>
+                <button class= "addButton" id="0">Add to cart</button>
+            </div>
+            <!--Tarjeta 2-->
+            <div class= "products rock">
+                <img src="https://i.ibb.co/34cB7Ln/multitrack.png" alt="multi track">
+                <h3>Name</h3>
+                <p>Price</p>
+                <button class= "addButton" id="1">Add to cart</button>
+            </div>
+        </div>
+        <!--Track 2-->
+        <div class="cardContainer">
+            <h2>Track 2</h2>
+            <!--Tarjeta 3-->
+            <div class= "products indie">
+                <img src="https://i.ibb.co/2M7K8BB/waveform.png" alt="stereo track">
+                <h3>Name</h3>
+                <p>Price</p>
+                <button class= "addButton" id="2">Add to cart</button>
+            </div>
+            <!--Tarjeta 4-->
+            <div class= "products indie">
+                <img src="https://i.ibb.co/34cB7Ln/multitrack.png" alt="multi track">
+                <h3>Name</h3>
+                <p>Price</p>
+                <button class= "addButton" id="3">Add to cart</button>
+            </div> 
+        </div>
+        <!--Track 3-->
+        <div class="cardContainer">
+            <h2>Track 3</h2>
+            <!--Tarjeta 5-->
+            <div class= "products metal">
+                <img src="https://i.ibb.co/2M7K8BB/waveform.png" alt="stereo track">
+                <h3>Name</h3>
+                <p>Price</p>
+                <button class= "addButton" id="4">Add to cart</button>
+            </div>
+            <!--Tarjeta 6-->
+            <div class= "products metal">
+                <img src="https://i.ibb.co/34cB7Ln/multitrack.png" alt="multi track">
+                <h3>Name</h3>
+                <p>Price</p>
+                <button class= "addButton" id="5">Add to cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer class="footer">
+        <p>©2021 - Rodrigo Carlachiani</p>
+    </footer>
+
+    <!--Script JS-->
+    <script src="./js/main.js"></script>
+    
+</body>
+</html>

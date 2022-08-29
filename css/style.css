@@ -1,0 +1,165 @@
+/* Estilos del body y generales */
+body {
+    font-family: 'Raleway', sans-serif;
+}
+.none {
+    display: none;
+}
+
+/* Estilos de alertas */
+.pAlert {
+    display: flex;
+    justify-content: center; 
+    width: 320px;
+    padding: 10px;
+    margin: 0px; 
+    position: fixed; 
+    background-color: rgb(226, 198, 145); 
+    border-radius: 5px; 
+    box-shadow: 2px 2px 3px rgba(83, 83, 83, 0.705); 
+}
+.imgAlert {
+    width: 15px; 
+    height: 15px; 
+    margin-right: 10px;
+}
+
+/* Estilos de la API, titulo y carrito */
+#headerContainer {
+    display: grid; 
+    grid-template-columns: 220px 600px 250px; 
+    justify-content: space-around; 
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+#cartHeader {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    height: 40px; 
+}
+#totalContainer{
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    font-size: 15px;
+}
+#counterTotal{
+    font-size: 12px;
+}
+#imgCart {
+    margin-right: 6px;
+    width: 30px; 
+}
+#h2Cart {
+    font-size: 25px; 
+}
+#btnContainer {
+    display: flex; 
+    justify-content: center;
+}
+.btnCart {
+    padding: 5px; 
+    margin: 10px;
+    font-size: 12px;
+    background-color: rgb(224, 215, 196);
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 2px 4px rgba(51, 51, 51, 0.473);
+}
+.btnCart:hover{
+    transform: scale(1.1);
+    transition: 200ms;
+}
+#cartDOM {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+    margin-left: 9px;
+}
+#cart {
+    list-style-image: url(https://i.ibb.co/WWG42pv/audio-track.png);
+    background-color: rgb(241, 237, 227); 
+    border-radius: 3px; 
+    padding: 10px 15px 10px 30px ; 
+    display: none; 
+    box-shadow: 2px 2px 5px rgba(87, 87, 87, 0.678); 
+    font-weight: bold;  
+}
+#tittleContainer {
+    display: grid; 
+    justify-items: center;
+}
+#imgTittle {
+    margin-right: 20px;
+}
+#weatherContainer {
+    display: grid; 
+}
+#weather {
+    display: grid; 
+    justify-items: center;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    background-image: url(https://i.ibb.co/XpYCQS0/Cloud-ok.png);
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+/* Estilos de las cards de productos */
+.divCards {
+    display: flex; 
+    justify-content: space-around; 
+    width: 1200px; 
+    margin: 0 auto;
+}
+.cardContainer {
+    text-align: center; 
+    padding: 20px; 
+    margin: 20px;
+}
+.addButton {
+    width: 80px;
+    padding: 5px; 
+    background-color: rgb(221, 206, 218);
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(51, 51, 51, 0.815);
+    border: none;
+}
+.addButton:hover{
+    transform: scale(1.1);
+    transition: 200ms;
+}
+.products {
+    border-radius: 8px; 
+    padding: 30px; 
+    margin: 30px 30px 80px 30px; 
+    box-shadow: 2px 2px 6px rgba(51, 51, 51, 0.733);
+}
+.products.rock {
+    background-image: url(https://i.ibb.co/QjhL4DH/rock.png);
+    background-repeat: no-repeat ;
+    background-size: cover;
+}
+.products.indie {
+    background-image: url(https://i.ibb.co/3NhLL96/indie.png);
+    background-repeat: no-repeat ;
+    background-size: cover;
+}
+.products.metal {
+    background-image: url(https://i.ibb.co/zZ4x1Vk/metal.png);
+    background-repeat: no-repeat ;
+    background-size: cover;
+}
+
+/* Estilos del footer */
+.footer {
+    display: flex;
+    background-color: rgb(228, 224, 217);
+    justify-content: center;
+    margin: 0px;
+    border-radius: 8px;   
+}

@@ -1,0 +1,43 @@
+[
+    {
+        "id":"0",
+        "name":"Rock stereo track",
+        "price":2,
+        "quantity":1
+    },
+
+    {
+        "id":"1",
+        "name":"Rock multi track",
+        "price":10,
+        "quantity":1
+    },
+
+    {
+        "id":"2",
+        "name":"Indie stereo track",
+        "price":2,
+        "quantity":1
+    },
+
+    {
+        "id":"3",
+        "name":"Indie multi track",
+        "price":10,
+        "quantity":1
+    },
+
+    {
+        "id":"4",
+        "name":"Metal stereo track",
+        "price":2,
+        "quantity":1
+    },
+    
+    {
+        "id":"5",
+        "name":"Metal multi track",
+        "price":10,
+        "quantity":1
+    }
+]
